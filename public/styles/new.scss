@@ -1,0 +1,35 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+// Mixins
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// Base styles
+body {
+    font-family: $font-stack;
+    color: $primary-color;
+}
+
+h1 {
+    font-size: 2em;
+    color: $secondary-color;
+    @include border-radius(5px);
+}
+
+button {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    @include border-radius(3px);
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
