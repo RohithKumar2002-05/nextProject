@@ -1,6 +1,6 @@
 import { db } from "@/db";
 import Link from "next/link";
-interface SnippetProps {
+interface Snippet {
   id: number;
   title: string;
   code: string;
@@ -9,7 +9,7 @@ interface SnippetProps {
 export default async function Home() {
   const snippets = await db.snippet.findMany();
 
-  const renderedSnippets = snippets.map((snippet:SnippetProps) => {
+  const renderedSnippets = snippets.map((snippet:Snippet) => {
     return (
       <div key={snippet.id}>
         <div className="flex justify-between items-center  p-2 border ">
