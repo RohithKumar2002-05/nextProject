@@ -1,5 +1,3 @@
-
-
 // 'use client';
 // We should not use client in server side components
 import { notFound } from "next/navigation";
