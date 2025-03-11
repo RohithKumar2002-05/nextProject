@@ -2,7 +2,7 @@
 import { Editor } from "@monaco-editor/react";
 import type { Snippet } from "@prisma/client";
 import { useState } from "react";
-import * as actions from "../../actions/serveraction";
+import * as actions from "../actions/serveraction";
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
 interface SnippetEditPage {

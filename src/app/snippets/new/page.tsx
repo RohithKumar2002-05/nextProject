@@ -2,7 +2,7 @@
 
 
 import { useActionState } from "react";
-import * as actions from '@/actions/serveraction'
+import * as actions from '@/app/actions/serveraction'
 export default function SnippetCreatePage(){
  
 
