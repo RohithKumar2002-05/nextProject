@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { db } from "@/db";
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
-import * as actions from '@/app/actions/serveraction';
+import * as actions from '@/actions/serveraction';
 
 interface SnippetShowPageProps {
     params: Promise <{ id: string }>;
