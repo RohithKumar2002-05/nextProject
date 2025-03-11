@@ -1,3 +1,4 @@
+
 import { db } from "@/db";
 import Link from "next/link";
 interface Snippet {
